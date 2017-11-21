@@ -2,19 +2,19 @@ main{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content:center;
-	
+
 }
 #wrapper{
 	margin:0 auto;
    	width:1333px;
-   	
+
 }
 h2{
 	font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
 	color: black;
-	position: absolute; 
-   	top: 200px; 
-   	left: 600px; 
+	position: absolute;
+   	top: 200px;
+   	left: 600px;
    	width: 100%;
 	font-size: 30px;
 
@@ -33,7 +33,7 @@ h1{
 	font-family: Cambria, Georgia, serif;
 	color: grey;
 	font-size: 20px;
-	
+
 }
 h3{
 	font-family: Cambria, Georgia, serif;
@@ -59,7 +59,7 @@ h3{
  	border-radius: 10px;
  	border-radius:10px;
   	margin-right:20px;
-  	
+
 }
 #Support{
 	width: 200px;
@@ -83,11 +83,13 @@ h3{
 a{
 	text-decoration: none;
 }
-
+a:hover{
+	font-size: 120%;
+}
 article{
 	font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
 	color: black;
-	
+
 }
 p{
 	color: black;
@@ -115,16 +117,3 @@ p{
   background-color: #efefef;
   text-align: center;
 }
-
-
-	
-
-
-
-
-
-
-
-
-
-

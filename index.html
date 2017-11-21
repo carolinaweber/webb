@@ -1,43 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link href="rabbit.css" rel="stylesheet" type="text/css">
-	<title></title>
-</head>
-<body>
-	<div id = "wrapper">
-		
-			<header>
-			</header>
-		<section id = "Border">
-			<a href="file:///C:/Users/carweb1/OneDrive%20%E2%80%93%20Kunskapsf%C3%B6rbundet%20V%C3%A4st/Webbutveckling/testning%20stuff/index.html">
-				<h3>Carolinas Företag</h3>
-			</a>
-		</section>
-		<main>
-		<section id = "Webbshop">
-			<a href="file:///C:/Users/carweb1/OneDrive%20%E2%80%93%20Kunskapsf%C3%B6rbundet%20V%C3%A4st/Webbutveckling/testning%20stuff/dog.html">
-			<h1>Webbshop</h1>
-			<p>bla bla bla</p>
-			</a>
-		</section>
+  <head>
+    <link href="restaurang.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Cabin+Sketch|Open+Sans|Bubbler+One|Romanesco|Forum|Dancing+Script" rel="stylesheet">
+    <title>ModenaAsparagi</title>
+  </head>
+  <body>
+    <header>
+      <img class="loggan" src="https://i.imgur.com/FQLMUyU.png" alt="bild">
+    </header>
+  <div id = "wrapper">
+    <section id="mysite">
+      <div><h1 id = "karta">Karta</h1></div>
+      <div> <h1 id="knappmeny">Meny</h1></div>
+      <div><h1 id = "öppetider">Information</h1></div>
+  </section>
 
-		<section id ="Support">
-			<a href="file:///C:/Users/carweb1/OneDrive%20%E2%80%93%20Kunskapsf%C3%B6rbundet%20V%C3%A4st/Webbutveckling/testning%20stuff/mice.html">
-			<h1>Support</h1>
-			<p>bla bla bla</p>	
-			</a>
-		</section>
+    <section id = "karta1">
+    <div id=scrollaner>
+      <article id = "map">
+        <h2>Karta</h2>
+        <p id="p1">Stora Nygatan 22 Stockholm<br>tel. 08-7344509<br>Välkommen</p>
+      </article>
+<iframe width="80%" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJd1pqROJ3X0YRuncDxBBY9pw&key=AIzaSyAf8hD481yZbPGoKcClamEOzpGtEmXRPXU" allowfullscreen></iframe>
+  </section>
+  <section id =öppetiderbox>
+  <div id=scrolladown>
+    <article id = "open">
+      <h2>Information</h2>
+      <p id="p1">Mån-Tors 11.00-23.00 <br>Fre-Sön 11.00-24.00<br> <br>Kontakta oss: tel. 0721-999054</p>
+      <h5>Primi Piatti är en ny öppnad italiensk restaurang med italienska klassiska rätter.<br>Ta ett glas och njut av doftena från medelhavet </h5>
+    </article>
+  </div>
+</section>
+    <section id = "menybox">
+    <div id=scrollatill>
+      <article id="första">
+        <h2>Meny</h2>
+        <h4>Pastarätter</h4>
+        <section id="menypasta">
+        <section id="lasagne">
+        <h3>Lasagne</h3><p>Välsmakande lasange<br> med mald köttfärs och<br>hemlagad pasta<br>115:-</p>
+        </section>
+        <section id="Pennetteconverdure">
+        <h3>Pennette con verdure</h3><p>Pennette med grönsaker <br>är en matig,<br> vegetarisk italiensk<br>pastarättmed lite sting<br>från röd chili.<br>98:-</p>
+        </section>
+        <section id="Spaghetticonlecozze">
+        <h3>Spaghetti con le cozze</h3><p>Spaghetti med musslor,<br>vitt vin och persilja.<br>134:-</p>
+        </section>
+        </section>
+        <section id="menykött">
+        <h4>Kötträtter</h4>
+        <section id="Bisteccaallafiorentina">
+        <h3>Bistecca alla fiorentina</h3><p>En italiensk klassiker,<br>grillad på kolgrill.<br>164:-</p>
+        </section>
+        <section id="VitelloTonnato">
+        <h3>Vitello Tonnato</h3><p>Tunnt skivat kalvkött.<br>65:-</p>
+        </section>
+        <section id="Basilikamarineradelammkotletter">
+        <h3>Basilikamarinerade lammkotletter</h3><p>I vår örtmarinad har vi basilika,<br> timjan, vitlök och citron<br>164:-</p>
+        </section>
+        </section>
+      </div>
+      </article>
 
-		<section id = "IT">
-				<a href="file:///C:/Users/carweb1/OneDrive%20%E2%80%93%20Kunskapsf%C3%B6rbundet%20V%C3%A4st/Webbutveckling/testning%20stuff/cat.html">
-				<h1>IT</h1>
-				<p>bla bla bla</p>
-				</a>
-		</section>
-	</main>
-		<div class="footer">Detta är min <strong>första</strong> webbsida.</div>
-	</div>
-	
-</body>
+    </div>
+  </section>
+  </div>
+  </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$("#karta").click(function() {
+   $('html, body').animate({
+       scrollTop: $("#scrollaner").offset().top
+   }, 2000);
+});
+</script>
+<script>
+$("#öppetider").click(function() {
+   $('html, body').animate({
+       scrollTop: $("#scrolladown").offset().top
+   }, 2000);
+});
+</script>
+<script>
+
+ $("#knappmeny").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#scrollatill").offset().top
+    }, 2000);
+});
+</script>
+
+
+
 </html>
